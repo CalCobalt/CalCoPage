@@ -1,4 +1,2 @@
-# CalCoProj
-这里是CalCobalt的发布页面。
-
-
+# CalCobalt
+一种基于Github的发布页面。

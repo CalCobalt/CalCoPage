@@ -22,38 +22,59 @@
   window.setInterval("countDown()", 1000);
 </script>
 <style>
-/* 基本样式 */
-body {
-  background-color: black;
-  text-align: center;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* 不同屏幕尺寸下的样式调整 */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 1.5em; /* 调整标题字体大小 */
+  /* 基本样式 */
+  body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
-  p, a {
-    font-size: 1em; /* 调整段落和链接字体大小 */
+  
+  /* 不同屏幕尺寸下的样式调整 */
+  @media screen and (max-width: 1200px) {
+    h1 {
+      font-size: 2rem; /* 在较大屏幕上使用更大的标题字体 */
+    }
   }
-
-  img {
-    width: 150px; /* 调整图片宽度 */
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem; /* 在中等屏幕上调整标题字体大小 */
+    }
+    
+    p, a {
+      font-size: 1rem; /* 在中等屏幕上调整段落和链接字体大小 */
+    }
+    
+    img {
+      width: 50%; /* 图片宽度相对于屏幕宽度的百分比 */
+      max-width: 200px; /* 最大宽度限制 */
+      height: auto; /* 高度自动调整以保持图片比例 */
+    }
   }
-
-}
-</style>
-</head>
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem; /* 在小屏幕上进一步减小标题字体大小 */
+    }
+    
+    p, a {
+      font-size: 0.9rem; /* 在小屏幕上减小段落和链接的字体大小 */
+    }
+    
+    img {
+      width: 70%; /* 在小屏幕上增加图片的相对宽度 */
+    }
+  }
+  </style>
+  </head>
 <body>
 <!-- 页面内容 -->
 <h1>你来错地方了</h1>

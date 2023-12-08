@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>媒体查询示例</title>
+ <style>
+   /* 默认样式 */
+   h1 {
+     font-size: 24px;
+   }
+   p {
+     font-size: 16px;
+   }
+   img {
+     width: 100%;
+   }
+
+   /* 当屏幕尺寸小于或等于 767 像素时应用的样式 */
+   @media screen and (max-width: 767px) {
+     h1 {
+       font-size: 20px;
+     }
+     p {
+       font-size: 14px;
+     }
+     img {
+       width: 100%;
+     }
+   }
+ </style>
+</head>
+<body>
+ <h1>媒体查询示例</h1>
+ <p>这是一个媒体查询示例。当屏幕尺寸小于或等于 767 像素时，文本和图像的样式将发生变化。</p>
+ <img src="example.jpg" alt="示例图片">
+</body>
+</html>

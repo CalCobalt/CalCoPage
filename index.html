@@ -58,7 +58,6 @@ a {
       font-size: 2rem; /* 在较大屏幕上使用更大的标题字体 */
     }
   }
-  
   @media screen and (max-width: 768px) {
     body {
       background-image: url(https://t.mwm.moe/mp);
@@ -93,8 +92,30 @@ a {
     
     img {
       width: 70%; /* 在小屏幕上增加图片的相对宽度 */
+      max-width: 200px; /* 最大宽度限制 */
+      height: auto; /* 高度自动调整以保持图片比例 */
+    }    
+  }
+
+  @media screen and (orientation: portrait) {
+    body {
+      background-image: url(https://t.mwm.moe/mp);
+    }
+    h1 {
+      font-size: 2.7rem; /* 在竖屏模式下进一步减小标题字体大小 */
+    }
+
+    p, a {
+      font-size: 2.1rem; /* 在竖屏模式下进一步减小段落和链接的字体大小 */
+    }
+
+    img {
+      width: 100%; /* 在竖屏模式下将图片宽度设置为100% */
+      max-width: 200px; /* 最大宽度限制 */
+      height: auto; /* 高度自动调整以保持图片比例 */
     }
   }
+
   </style>
   </head>
 <body>
@@ -104,9 +125,11 @@ a {
     <h1>你来错地方了</h1>
     <p>CalCobalt的发布页面！</p>
     <p>将于 <a id="Time" >114514</a> 秒后跳转至 网易云音乐 </p>
-    <br>
     <a href="https://music.163.com/#/artist?id=50980005">访问 网易云音乐 页面</a>
+    <br>
     <a href="https://github.com/calcobalt">访问 Github 页面</a>
+    <br>
+    <a href="https://space.bilibili.com/3461564757707456">访问 Bilibili 页面</a>
     <br>
     <img src="00308.png" alt="头像" height="200" width="200">
     <p>想办法换个头像...</p>

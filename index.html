@@ -35,7 +35,7 @@ a {
     border: 1px solid rgba(0, 0, 0, 0);
   }
   body {
-    background-repeat:no-repeat; background-attachment:fixed;background-size:cover;background-image: url(https://www.dmoe.cc/random.php);
+    background-repeat:no-repeat; background-attachment:fixed;background-size:cover;background-image: url(https://t.mwm.moe/pc);
     background-color: black;
     text-align: center;
     color: rgb(45, 89, 45);
@@ -51,12 +51,18 @@ a {
   
   /* 不同屏幕尺寸下的样式调整 */
   @media screen and (max-width: 1200px) {
+    body {
+      background-image: url(https://t.mwm.moe/pc);
+    }
     h1 {
       font-size: 2rem; /* 在较大屏幕上使用更大的标题字体 */
     }
   }
   
   @media screen and (max-width: 768px) {
+    body {
+      background-image: url(https://t.mwm.moe/mp);
+    }
     h1 {
       font-size: 1.5rem; /* 在中等屏幕上调整标题字体大小 */
     }
@@ -73,6 +79,10 @@ a {
   }
   
   @media screen and (max-width: 480px) {
+    /* 在小屏幕上进一步调整样式 */
+    body {
+      background-image: url(https://t.mwm.moe/mp);
+    }
     h1 {
       font-size: 1.2rem; /* 在小屏幕上进一步减小标题字体大小 */
     }
